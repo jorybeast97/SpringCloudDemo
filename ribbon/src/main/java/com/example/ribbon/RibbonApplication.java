@@ -1,13 +1,13 @@
-package com.magnoliaory.consul;
+package com.example.ribbon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConsulApplication {
+public class RibbonApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsulApplication.class, args);
+        SpringApplication.run(RibbonApplication.class, args);
     }
 
 }

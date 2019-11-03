@@ -8,10 +8,10 @@
         <version>2.2.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.magnoliaory</groupId>
-    <artifactId>consul</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>ribbon</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>consul</name>
+    <name>ribbon</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -26,7 +26,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
 
         <dependency>

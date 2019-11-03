@@ -6,10 +6,15 @@ eureka:
   client:
     fetch-registry: false
     register-with-eureka: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
   instance:
     hostname: localhost
 
+  server:
+    enable-self-preservation: false
+
 spring:
   application:
-    name: eurekaServer
+    name: spring-cloud-demo-eurekaServer

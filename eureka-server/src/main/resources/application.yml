@@ -1,20 +1,21 @@
 
+#服务端运行端口
 server:
   port: 10001
 
 eureka:
   client:
+#    是否将自己也作为客户端注册进入eureka
     fetch-registry: false
     register-with-eureka: false
+#    服务端自己的注册地址,客户端将访问该地址进行注册
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
+# 服务端ip地址,本机使用localhost测试
   instance:
     hostname: localhost
-
-  server:
-    enable-self-preservation: false
-
+# Eureka的名字
 spring:
   application:
     name: spring-cloud-demo-eurekaServer

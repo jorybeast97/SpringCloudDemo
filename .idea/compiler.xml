@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-client" />
         <module name="eureka-server" />
+        <module name="feign" />
         <module name="ribbon" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="consul-server" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="feign" target="1.8" />
       <module name="ribbon" target="1.8" />
       <module name="service-admin" target="1.8" />
     </bytecodeTargetLevel>
@@ -24,6 +26,7 @@
       <module name="consul-server" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="feign" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="service-admin" options="-parameters" />
     </option>

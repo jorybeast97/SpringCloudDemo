@@ -1,13 +1,16 @@
+#服务端口
 server:
-  port: 10005
-
+  port: 10004
+#服务名称
 spring:
   application:
     name: eureka-client
 
 eureka:
   client:
+#    服务注册中心(eurekaServer)注册地址，将Client注册进入eureka
     service-url:
       defaultZone: http://localhost:10001/eureka/
+#  服务实例Host地址
   instance:
     hostname: localhost

@@ -1,12 +1,10 @@
-#服务名称
 spring:
   application:
-    name: spring-cloud-demo-ribbon
-#服务端口
-server:
-  port: 10005
-#注册中心地址
+    name: spring-cloud-demo-feign
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:10001/eureka/
+server:
+  port: 10006

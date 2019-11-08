@@ -9,6 +9,8 @@
         <module name="eureka-client" />
         <module name="eureka-server" />
         <module name="feign" />
+        <module name="hystrix" />
+        <module name="hystrix-dashboard" />
         <module name="ribbon" />
       </profile>
     </annotationProcessing>
@@ -17,6 +19,8 @@
       <module name="eureka-client" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="feign" target="1.8" />
+      <module name="hystrix" target="1.8" />
+      <module name="hystrix-dashboard" target="1.8" />
       <module name="ribbon" target="1.8" />
       <module name="service-admin" target="1.8" />
     </bytecodeTargetLevel>
@@ -27,6 +31,8 @@
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="feign" options="-parameters" />
+      <module name="hystrix" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="service-admin" options="-parameters" />
     </option>

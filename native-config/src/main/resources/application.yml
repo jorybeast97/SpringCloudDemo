@@ -1,0 +1,14 @@
+server:
+  port: 10009
+spring:
+  application:
+    name: spring-cloud-demo-native-config
+#  配置文件获取方式,native本地，
+  profiles:
+    active: native
+#    本地配置文件存放路径
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared

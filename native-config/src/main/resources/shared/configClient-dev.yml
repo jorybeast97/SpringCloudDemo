@@ -1,0 +1,4 @@
+server:
+  port: 10010
+
+foo: foo version 1

@@ -6,33 +6,39 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-client" />
         <module name="eureka-client" />
         <module name="eureka-server" />
         <module name="feign" />
         <module name="hystrix" />
         <module name="hystrix-dashboard" />
+        <module name="native-config" />
         <module name="ribbon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="config-client" target="1.8" />
       <module name="consul-server" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="feign" target="1.8" />
       <module name="hystrix" target="1.8" />
       <module name="hystrix-dashboard" target="1.8" />
+      <module name="native-config" target="1.8" />
       <module name="ribbon" target="1.8" />
       <module name="service-admin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-client" options="-parameters" />
       <module name="consul-server" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="feign" options="-parameters" />
       <module name="hystrix" options="-parameters" />
       <module name="hystrix-dashboard" options="-parameters" />
+      <module name="native-config" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="service-admin" options="-parameters" />
     </option>
